@@ -81,7 +81,7 @@
                     <h2 class="typed-text-output d-inline"></h2>
                     <div class="typed-text d-none">UI Developer, HTML Developer, Front End Developer, WordPress Developer</div>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <a href="doc/Tirtha_Resume.doc" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -110,7 +110,7 @@
                     </div>
                     <p class="mb-4">I’m a UI & Frontend Developer with 13 years of hands-on experience building fast, responsive, and user-friendly websites. I specialize in HTML, CSS, JavaScript, WordPress, and Wix, delivering clean designs that convert visitors into customers.</p>
                     <p class="mb-4">Over the years, I’ve worked with startups, agencies, and international clients, handling projects from concept to launch. As a former Team Lead, I’ve successfully managed teams, coordinated with clients, and ensured on-time, high-quality delivery.</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                    <!-- <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> -->
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
@@ -289,7 +289,7 @@
                     <h1 class="display-5 mb-0">My Services</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                    <a class="btn btn-primary py-3 px-5" href="" data-bs-toggle="modal" data-bs-target="#hireMeModal">Hire Me</a>
                 </div>
             </div>
             <div class="row g-4">
@@ -347,18 +347,98 @@
     <!-- Service End -->
 
 
+    <!--Modal-->
+    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content border-0 shadow-lg rounded-4">
+      
+            <!-- Modal Header -->
+            <div class="modal-header border-0">
+              <h5 class="modal-title fw-bold">
+                Let’s Build Something Great
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal Body -->
+            <div class="modal-body px-4 pb-4">
+              <p class="text-muted mb-4">
+                Share your project details and I’ll get back to you within 24 hours.
+              </p>
+      
+              <form id="hireMeForm" action="https://formsubmit.co/tirthabig0@gmail.com" method="post">
+                <div class="row g-3">
+      
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <select class="form-select" required>
+                      <option value="">Project Type</option>
+                      <option>Website Design</option>
+                      <option>Website Development</option>
+                      <option>WordPress</option>
+                      <option>WIX</option>
+                      <option>UI/UX Design</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <select class="form-select">
+                      <option value="">Budget Range</option>
+                      <option>Below $300</option>
+                      <option>$300 – $800</option>
+                      <option>$800 – $1500</option>
+                      <option>$1500+</option>
+                    </select>
+                  </div>
+      
+                  <div class="col-12">
+                    <textarea class="form-control" rows="4" placeholder="Tell me about your project..." required></textarea>
+                  </div>
+      
+                </div>
+      
+                <!-- Buttons -->
+                <div class="d-flex flex-column flex-md-row gap-3 mt-4">
+                  <button type="submit" class="btn btn-primary py-3 px-5 w-100">
+                    Send Project Request
+                  </button>
+      
+                  <a 
+                    href="https://wa.me/918900188963?text=Hi%20Tirtha,%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+                    target="_blank"
+                    class="btn btn-success py-3 px-5 w-100">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Me
+                  </a>
+                </div>
+              </form>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    <!--Modal ends-->
+
+
     <!-- Projects Start -->
     <div class="container-xxl py-6 pt-5" id="project">
         <div class="container">
             <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Projects</h1>
+                    <h1 class="display-5 mb-0">Recent Projects</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
-                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                        <li class="mx-3 active" data-filter="*">Recent Projects</li>
+                        <li class="mx-3" data-filter=".first">WordPress</li>
+                        <li class="mx-3" data-filter=".second">WIX</li>
                     </ul>
                 </div>
             </div>
@@ -372,7 +452,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/soccerpath.jpg" alt="">
                         <div class="portfolio-btn">
@@ -381,7 +461,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/easeaccounting.jpg" alt="">
                         <div class="portfolio-btn">
@@ -390,7 +470,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/kidmoto.jpg" alt="">
                         <div class="portfolio-btn">
@@ -408,7 +488,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/pegasus.jpg" alt="">
                         <div class="portfolio-btn">
@@ -574,7 +654,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Tirtha</a>, All Right Reserved.
+                        &copy; <a class="border-bottom text-secondary" href="#">Techie Tirtha</a>, All Rights Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
