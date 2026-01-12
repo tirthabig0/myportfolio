@@ -369,11 +369,11 @@
                 <div class="row g-3">
       
                   <div class="col-md-6">
-                    <input type="text" class="form-control" name="your email" placeholder="Your Name" required>
+                    <input type="text" class="form-control" name="yourname" placeholder="Your Name" required>
                   </div>
       
                   <div class="col-md-6">
-                    <input type="email" class="form-control" name="your email" placeholder="Your Email" required>
+                    <input type="email" class="form-control" name="youremail" placeholder="Your Email" required>
                   </div>
       
                   <div class="col-md-6">
@@ -399,7 +399,7 @@
                   </div>
       
                   <div class="col-12">
-                    <textarea class="form-control" rows="4" name="your message" placeholder="Tell me about your project..." required></textarea>
+                    <textarea class="form-control" rows="4" name="yourmessage" placeholder="Tell me about your project..." required></textarea>
                   </div>
       
                 </div>
@@ -705,7 +705,7 @@
       .addEventListener("submit", function (e) {
         e.preventDefault();
   
-        emailjs.sendForm("service_mxqyzbj", "template_0850jbf", this)
+        emailjs.sendForm("service_mxqyzbj", "template_lj9atve", this)
           .then(() => {
             alert("Hire request sent successfully!");
             this.reset();
