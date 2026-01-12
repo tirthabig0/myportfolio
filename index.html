@@ -365,19 +365,19 @@
                 Share your project details and I’ll get back to you within 24 hours.
               </p>
       
-              <form id="hireMeForm" action="https://formsubmit.co/tirthabig0@gmail.com" method="post">
+              <form id="hireMeForm">
                 <div class="row g-3">
       
                   <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
+                    <input type="text" class="form-control" name="your email" placeholder="Your Name" required>
                   </div>
       
                   <div class="col-md-6">
-                    <input type="email" class="form-control" placeholder="Your Email" required>
+                    <input type="email" class="form-control" name="your email" placeholder="Your Email" required>
                   </div>
       
                   <div class="col-md-6">
-                    <select class="form-select" required>
+                    <select class="form-select" name="project" required>
                       <option value="">Project Type</option>
                       <option>Website Design</option>
                       <option>Website Development</option>
@@ -389,7 +389,7 @@
                   </div>
       
                   <div class="col-md-6">
-                    <select class="form-select">
+                    <select class="form-select" name="budget">
                       <option value="">Budget Range</option>
                       <option>Below $300</option>
                       <option>$300 – $800</option>
@@ -399,7 +399,7 @@
                   </div>
       
                   <div class="col-12">
-                    <textarea class="form-control" rows="4" placeholder="Tell me about your project..." required></textarea>
+                    <textarea class="form-control" rows="4" name="your message" placeholder="Tell me about your project..." required></textarea>
                   </div>
       
                 </div>
@@ -698,6 +698,23 @@
             });
         });
       </script>
+
+<script>
+    document
+      .getElementById("hireMeForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        emailjs.sendForm("service_mxqyzbj", "template_0850jbf", this)
+          .then(() => {
+            alert("Hire request sent successfully!");
+            this.reset();
+          })
+          .catch(() => {
+            alert("Failed to send hire request");
+          });
+      });
+  </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
